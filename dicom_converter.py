@@ -1,3 +1,5 @@
+import os
+
 class DicomVolumeToMultiPlanarNIfTIConverter:
     def __init__(self, dicom_directory=None, output_directory=None):
         """
@@ -35,6 +37,13 @@ class DicomVolumeToMultiPlanarNIfTIConverter:
         
         if not dicom_dir or not output_dir:
             raise ValueError("Both DICOM directory and output directory must be specified")
+        
+        # Validate input directory
+        if not os.path.exists(dicom_dir):
+            raise FileNotFoundError(f"Input directory does not exist: {dicom_dir}")
+        
+        if not os.path.isdir(dicom_dir):
+            raise NotADirectoryError(f"Input path is not a directory: {dicom_dir}")
         
         # Placeholder for actual conversion logic
         print(f"Converting DICOM files from {dicom_dir} to NIfTI format in {output_dir}")
