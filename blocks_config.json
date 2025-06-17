@@ -1,0 +1,19 @@
+[
+  {
+    "block_id": "m09DV6",
+    "name": "Test",
+    "description": "test module",
+    "inputs": [],
+    "outputs": [],
+    "connections": {
+      "input_connections": [],
+      "output_connections": []
+    },
+    "todo_list": [
+      {
+        "description": "Create project structure, docs, src [COMPLETED]",
+        "log": "Created `docs` and `src` directories.\n"
+      }
+    ]
+  }
+]
