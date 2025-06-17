@@ -1,8 +1,8 @@
 [
   {
-    "block_id": "m09DV6",
-    "name": "Test",
-    "description": "test module",
+    "block_id": "U9ysot",
+    "name": "Sample project",
+    "description": "Sample dummy project",
     "inputs": [],
     "outputs": [],
     "connections": {
@@ -11,8 +11,8 @@
     },
     "todo_list": [
       {
-        "description": "Create project structure, docs, src [COMPLETED]",
-        "log": "Created `docs` and `src` directories.\n"
+        "description": "Create dummy README.md file with short dummy content [COMPLETED]",
+        "log": "Created README.md with dummy content.\n"
       }
     ]
   }
