@@ -39,8 +39,8 @@
         "log": null
       },
       {
-        "description": "Validate Input Directory:** Implement checks within `convert_dicom_to_nifti_mpr` to verify that the `input_directory` exists and is a directory. Raise `FileNotFoundError` or similar for invalid paths.",
-        "log": null
+        "description": "Validate Input Directory:** Implement checks within `convert_dicom_to_nifti_mpr` to verify that the `input_directory` exists and is a directory. Raise `FileNotFoundError` or similar for invalid paths. [COMPLETED]",
+        "log": "Input directory validation has been implemented in `convert_dicom_to_nifti_mpr`. The function now:\n\n1. Checks if the input directory exists using `os.path.exists()` - raises `FileNotFoundError` if not found\n2. Verifies the path is actually a directory using `os.path.isdir()` - raises `NotADirectoryError` if it's a file or other type\n\nThe validation occurs after the existing parameter checks but before the conversion logic at dicom_converter.py:42-46.\n"
       },
       {
         "description": "Identify DICOM Files:** Develop a function (e.g., `_find_dicom_files`) to recursively scan the `input_directory` for files.",
